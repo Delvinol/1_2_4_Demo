@@ -10,7 +10,23 @@ const (
 	maxRetries = 3
 )
 
+var(
+	pendingCount int
+	title string = "Values"
+	enabled = true
+)
+
 func main() {
-	fmt.Println(language)
-	fmt.Println(maxRetries)
+	localCount := 2
+	// we can declare multiple variables at the same time with GO
+	limit, label := 3,"tasks"
+
+	fmt.Println("language: ", language)
+	fmt.Println("maxRetries: ",maxRetries)
+	fmt.Println("pendingCount: ",pendingCount)
+	fmt.Println("title; ",title)
+	fmt.Println("enabled; ",enabled)
+	fmt.Println("localCount; ",localCount)
+	fmt.Println("limit; ",limit)
+	fmt.Println("label; ",label)
 }
