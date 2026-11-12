@@ -39,4 +39,14 @@ func main() {
 	*pointer = 32 // here is mutation, that changes what is in *pointer address
 	fmt.Println(value)
 	fmt.Println(*pointer) 
+
+	role := "pasivo"
+	roleP := &role
+	fmt.Println(role)
+	fmt.Println(roleP)
+	fmt.Println(*roleP) //*pointer reads what is in the address
+
+	*roleP = "Top"
+	fmt.Println(*roleP)
+	fmt.Println(role)
 }
