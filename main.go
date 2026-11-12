@@ -4,8 +4,11 @@ import(
 	"fmt"
 )
 
-const language = "Go"
-const maxRetries = 3
+// It not that efficient, we can crete a group of consts
+const (
+	language = "Go"
+	maxRetries = 3
+)
 
 func main() {
 	fmt.Println(language)
